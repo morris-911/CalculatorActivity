@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Calculator"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="50sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:gravity="right|bottom"
+                android:lines="3">
+            </TextView>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:rowCount="5">
+
+                <Button
+                    android:id="@+id/btn_cancle"
+                    android:text="@string/cancle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_divide"
+                    android:text="@string/divide"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_multply"
+                    android:text="@string/multiply"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:text="@string/clear"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_seven"
+                    android:text="@string/seven"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_eight"
+                    android:text="@string/eight"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_nine"
+                    android:text="@string/nine"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_plus"
+                    android:text="@string/plus"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_four"
+                    android:text="@string/four"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_five"
+                    android:text="@string/five"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_six"
+                    android:text="@string/six"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_minus"
+                    android:text="@string/minus"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_one"
+                    android:text="@string/one"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_two"
+                    android:text="@string/two"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_three"
+                    android:text="@string/three"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <ImageButton
+                    android:id="@+id/btn_root"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:src="@drawable/text"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/btn_style">
+                </ImageButton>
+
+                <Button
+                    android:id="@+id/btn_reciprocal"
+                    android:text="@string/reciprocal"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_zero"
+                    android:text="@string/zero"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_dot"
+                    android:text="@string/dot"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_equal"
+                    android:text="@string/equal"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/btn_font_size"
+                    android:textColor="@color/black"
+                    android:background="@drawable/btn_style">
+                </Button>
+
+
+
+            </GridLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+
+
+</LinearLayout>
